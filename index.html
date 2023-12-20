@@ -10,145 +10,172 @@
       #viewDiv {
         padding: 0;
         margin: 0;
-        height: 90%;
+        height: 100%;
         width: 100%;
 		background-color: black;
       }
+	
 		
+	#main1 {
+	float: left;
+	right:0;
+    padding-top: %;
+    height: 84%;
+    width:50%;
+  }	
+		
+	#main2{
+	float:right;
+	right: 0;
+    padding-top: %;
+    height: 84%;
+    width:50%;
+	
+	
+  }		
 	#viewDiv {
+	float: left;
 	right: 0;
     padding: 0;
-    float: left;
-    height: 100%;
-    width:49.5%;
+    height: 96.5%;
+    width:99.5%;
+	margin-top: 0%;
+	padding: ;
+	margin-right:1%;
   }
 		
 	 #viewDiv2 {
         float: left;
-        right: 10%;
+        right: 0;
         padding: 1;
-        margin-left: 1%;
-        height: 47.8%;
-        width: 24.3%;
+        margin-left: 1.5%;
+		margin-top: 0%;
+        height: 46.3%;
+        width: 49%;
 		
 		}
 		
 	#viewDiv3 {
         float: right;
-        right: 10%;
-		
+        right: 0%;
         padding: 1;
-        margin: 0;
-		margin-left: 20%;
-		margin-top: -47.1%;
-        height: 47.8%;
-        width: 24.3%;
+		margin-right: -1%;
+		margin-top: %;
+        height: 46.3%;
+        width: 49%;
 		}
 	
 		#viewDiv4 {
         float: left;
         right: 0;
         padding: 1;
-		margin-top: -22.2%;
-		margin-left:1%;
-      	height: 47.8%;
-        width: 24.3%;
+		margin-top: %;
+		margin-left:1.5%;
+      	height: 46.3%;
+        width: 49%;
 		}
-	
+		
+	 #legendListDiv{
+	  float: right;	 
+	  padding: 1;
+	  margin-top: 0%;
+	  margin-right: %;
+      height: 45.9%;
+      width: 48%; 
+	  background-color: black;
+		}
+		
     #titleDiv{
     float: left;
     height: 30px;
-    width: 49%;
-	margin:0;
+    width: 99%;
+	margin-right:1%;
     background-color: black;
     color: white;
     text-align: center;
     padding-right: 0.5%;
-	padding-left: 1;
+	padding-left: ;
     font-weight: 400;
     font-size: 20px
     }
 	
 	#titleDiv2{
     float: left;
-	margin-top: %;
     height: 30px;
-    width: 23.5%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding-right: 1.8%;
-    font-weight: 400;
-    font-size: 20px	
-    }	
-		
-	#titleDiv3{
-    float: right;
-    height: 30px;
-    width: 24.4%;		
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding-left: 0%;
-    font-weight: 400;
-    font-size: 20px;
-	margin-left: 20%;
-	margin-top: -49%;		
-    }
-		
-	#titleDiv4{
-    float: left;
-	margin-top: -24.1%;
-    height: 30px;
-    width: 24.3%;		
+    width: 48%;
     background-color: black;
     color: white;
     text-align: center;
     padding-right: 1%;
     font-weight: 400;
     font-size: 20px;
+	margin: 0%;
+	margin-left: 1.5%;
+    }	
 		
+	#titleDiv3{
+    float: right;
+    height: 30px;
+    width: 48%;		
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding-right: 0%;
+	padding-top: 0%;
+    font-weight: 400;
+    font-size: 20px;
+	margin: 0%;		
     }
-	 #legendListDiv{
-	  float: right;	 
-	  padding: 1;
-	  margin-top: 27%;
-      height: 46%;
-      width: 24.3%;
-	  padding-right: 0.7%;
-	  padding-left: 0.8%; 
-	  background-color: black;
+		
+	#titleDiv4{
+    float: left;
+	margin-top: %;
+	margin-left: 1.5%;
+    height: 30px;
+    width: 48%;		
+    background-color: black;
+    color: white;
+    text-align: center;
+	padding-right: 1%;
+    font-weight: 400;
+    font-size: 20px
+    }
+	
+	#titlelegendListDiv{
+	float: right;
+	margin-top: %;
+    height: 30px;
+    width: 48%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-right: %;
+    font-weight: 400;
+    font-size: 20px;
+	margin-right: 0%;	
 		}
 		
     #header {
         width: 100%;
         background-color: maroon;
-        height: 0%;
+        height: 15%;
         text-align: center;
         color: white;
-		display: table;
-			
+		display: table;		
     }
    h1{
      text-align: center;
      color: white;
 	 font-weight:bold;
 	 font-size: 48px
-	
-    
+
     }
+		
 	h2{
      text-align: center;
       color: white; 
       float: right
     }
-		
-	
-		
-       
-    }
-	
-		
 		
 	 #overviewDiv {
       position: absolute;
@@ -417,8 +444,6 @@
         }
     }
 });  
-  
-  
 		  
 		const views = [view, view2, view3, view4];
         let active;
@@ -451,16 +476,25 @@
   </head>
   <body>
    <div id="header"><h1>Road Accident Cases in Ghana, First Quarter 2023</h1></div>
-   <div id="legendListDiv"></div>
+   
+   
+   
+	<div id="main1">
 	<div id="titleDiv">Accident Cases</div>
-	<div id="titleDiv2">Injuries</div>
-    <div id="viewDiv"></div>
-    <div id="viewDiv2"></div>
-    <div id="titleDiv3">Deaths</div>
-    <div id="viewDiv3"></div>
-    <div id="titleDiv4">Vehicles</div>
-    <div id="viewDiv4"></div>
-    
-    
+	<div id="viewDiv"></div>
+	  </div>
+	
+	<div id="main2">
+		<div id="titleDiv2">Injuries</div>
+ 		<div id="titleDiv3">Deaths</div>
+  		<div id="viewDiv2"></div>
+  		<div id="viewDiv3"></div>	
+  		<div id="titlelegendListDiv">Legend</div>
+   		<div id="titleDiv4">Vehicles</div>
+		<div id="viewDiv4"></div>
+		<div id="legendListDiv"></div>
+		
+		</div>
+	
   </body>
 </html>
